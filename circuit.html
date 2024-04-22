@@ -118,16 +118,22 @@
                         </div>
                         <div class="col-md-8">
                           <h5> 32 x 32 readout circuit - Arduino Nano </h5>
-
-                            xxxx
-
-                          <div>
-                              Quick link:
-                            <a href="https://www.nature.com/articles/s41467-024-45059-8">[Material List]</a>
-                            <a href="https://www.nature.com/articles/s41467-024-45059-8">[Material List]</a>
-
-
-                          </div>
+                            <p> This is an example readout circuit for a 32 by 32 resistive sensing matrix using Arduino Nano.
+                                It is an electrical-grounding-based readout architecture
+                                where one row of the sensor currently being read is grounded while all other rows are
+                                maintained at the reference voltage (2.5 V). During this state, a 32:1 analog switch is used as an analog demultiplexer to raster
+                                through the row and read individual resistances one by one. After completing measurements
+                                at the active row, the 32 single-pole double throw (SPDT) switches are used to ground the
+                                next row while returning the currently active row to the reference voltage. We added charging resistors
+                                to each column to charge the inverting node of each amplifier back to the reference voltage quickly and to
+                                reduce the input noise. Rastering through the readout resistors in the matrix is controlled by an Arduino Nano by
+                                switching the 32 SPDT switches and the 32:1 analog switch. The single sensor measurement
+                                at the output of the analog switch is converted to a digital signal (10-bit)
+                                and transmitted serially to a computer.
+                            </p>
+                            <p>
+                                Example circuit schematic. <a href="./resource/circuit_32x32_nano.zip">[Download]</a>
+                            </p>
                         </div>
                     </div>
 
@@ -137,16 +143,13 @@
                         </div>
                         <div class="col-md-8">
                           <h5> 32 x 32 readout circuit - Arduino ESP32 </h5>
-
-                            xxxx
-
-                          <div>
-                              Quick link:
-                            <a href="https://www.nature.com/articles/s41467-024-45059-8">[Material List]</a>
-                            <a href="https://www.nature.com/articles/s41467-024-45059-8">[Material List]</a>
-
-
-                          </div>
+                            <p> This is an example readout circuit for a 32 by 32 resistive sensing matrix using ESP32 for wireless communication.
+                                It is a very similar architecture as the Arduino Nano version, except the raastering
+                                through the readout resistors in the matrix is controlled by an ESP32.
+                            </p>
+                            <p>
+                                Example circuit schematic. <a href="./resource/circuit_32x32_esp32.zip">[Download]</a>
+                            </p>
                         </div>
                     </div>
 
