@@ -4,6 +4,9 @@
 <head>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111713571-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,20 +24,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             showPubs(0); // Set the initial state to select 0 when the page loads
         });
-        // function toggle_vis(id) {
-        // // var e = document.getElementById(id);
-        // var e = document.getElementsByClassName(id);
-        //     var showText = document.getElementById("showText");
-        //     for (var i = 0; i < e.length; i++) {
-        //         if (e[i].style.display == "none") {
-        //             e[i].style.display = "inline";
-        //             showText.innerHTML = "[Show less]";
-        //         } else {
-        //             e[i].style.display = "none";
-        //             showText.innerHTML = "[Show more]";
-        //         }
-        //     }
-        // }
+
     </script>
 
     <!-- Required meta tags -->
@@ -52,7 +42,7 @@
     <link href="files/jumbotron.css" rel="stylesheet">
     <script src="js/main.js"></script>
     <script src="js/scroll.js"></script>
-    <title>Yiyue Luo</title>
+    <title>Tactile Skin Toolkits</title>
 
 </head>
 
@@ -85,28 +75,27 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
+                              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Components
                               </a>
-                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                              </ul>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./fabrication.html">Fabrication</a>
+                                <a class="dropdown-item" href="./circuit.html">Circuit</a>
+                                <a class="dropdown-item" href="./circuit.html">Control</a>
+                                <a class="dropdown-item" href="./circuit.html">Application</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./experience.html">Related Projects</a>
+                                <a class="nav-link active" aria-current="page" href="./index.html#team">Team</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./experience.html">Contact Us</a>
+                                <a class="nav-link active" aria-current="page" href="./index.html#contact">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
 
 
             <div class="container-fluid" style="width: 80%;">
